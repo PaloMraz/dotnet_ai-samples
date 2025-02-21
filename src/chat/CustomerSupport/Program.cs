@@ -5,8 +5,8 @@ using Microsoft.SemanticKernel.Connectors.InMemory;
 var ollamaEndpoint = "http://localhost:11434/";
 var openAIEndpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
 
-var useOpenAIChat = true; // Use OpenAI chat completion models
-var useOpenAIEmbeddings = true; // Use OpenAI text embedding generation models
+var useOpenAIChat = false; // Use OpenAI chat completion models
+var useOpenAIEmbeddings = false; // Use OpenAI text embedding generation models
 var useManagedIdentity = true;
 
 IChatClient chatClient =
